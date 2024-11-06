@@ -1,0 +1,51 @@
+.Form {
+    width: 25rem;
+    margin: 0 auto;
+    background: white;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    button {
+        width: 80%;
+        height: 3rem;
+        margin: 0 auto;
+        border-radius: 0.4rem;
+        border: none;
+        background: black;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #000000b6;
+        }
+    }
+
+    .campos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .linkContainer {
+        text-align: center;
+
+        .Link {
+            text-align: center;
+            color: rgb(8, 8, 8);
+            text-decoration: none;
+
+        }
+    }
+
+}

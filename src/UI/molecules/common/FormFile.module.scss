@@ -1,0 +1,17 @@
+
+
+.container{
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+    .input{
+        width: 76%;
+        height: 2rem;
+        background: none;
+        border: 1px solid #dedddd;
+        border-radius: 0.4rem;
+        padding: 0.3rem;
+    }
+}

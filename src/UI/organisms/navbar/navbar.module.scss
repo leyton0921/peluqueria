@@ -1,0 +1,30 @@
+.Nav {
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.link {
+    font-size: 1rem;
+    width: 100%;
+    color: #7a7a7a; 
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.active {
+    color: #000; 
+    background-color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
