@@ -35,3 +35,10 @@ export interface Sort {
     property:     string;
     ignoreCase:   boolean;
 }
+
+export interface IResponsecreateservice {
+    id:          number;
+    name:        string;
+    description: string;
+    price:       number;
+}

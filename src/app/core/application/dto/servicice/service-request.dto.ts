@@ -4,3 +4,12 @@ export interface IGetServiceRequest {
     size: number;
     token: string;
 }
+
+export interface ICreateService {
+
+    name: string,
+    description: string,
+    price: number
+
+
+}    

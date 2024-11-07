@@ -46,15 +46,16 @@ export class HttpClient {
     return this.handleResponse(response)
   }
 
-  async post<T, B>(url: string, body: B): Promise<T> {
-    const headers = await this.getHeader();
+  async post<T, B>(url: string, body: B,token?: string): Promise<T> {
+    const headers = await this.getHeader(token);
     const response = await fetch(`${this.baseUrl}/${url}`, {
-      headers: headers,
-      method: "POST",
-      body: JSON.stringify(body),
+        headers: headers,
+        method: "POST",
+        body: JSON.stringify(body),
     })
     return this.handleResponse(response);
-  }
+}
+
 
   async put<T, B>(url: string, body: B): Promise<T> {
     const headers = await this.getHeader();

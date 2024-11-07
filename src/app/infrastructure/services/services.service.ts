@@ -1,6 +1,7 @@
 import { HttpClient } from "../utils";
-import { IGetServiceRequest } from "@/app/core/application/dto/servicice/service-request.dto";
+import { IResponsecreateservice } from "@/app/core/application/dto/servicice/service-response.dto";
 import { IServiceResponse } from "@/app/core/application/dto/servicice/service-response.dto";
+import { ICreateService } from "@/app/core/application/dto/servicice/service-request.dto";
 export class ServicesService {
 
   private httpClient: HttpClient;
@@ -16,6 +17,16 @@ export class ServicesService {
       const response = this.httpClient.get<IServiceResponse>(`services?page=${page}&size=${size}`, token);
       return response;
     } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  }
+
+  createService(body:ICreateService ,token:string){
+    try{
+      const response = this.httpClient.post<IResponsecreateservice,ICreateService>("services",body,token);
+      return response ;
+    }catch(error){
       console.log(error);
       throw error;
     }
